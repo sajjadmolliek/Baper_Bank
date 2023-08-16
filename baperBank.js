@@ -5,7 +5,7 @@ document.getElementById('submitBttn').addEventListener('click', function(){
     const mailMelabo = mailDhorlam.value;
     const passwordMelabo = passwordDhorlam.value;
     
-    if(mailMelabo == "baperbank@gmail.com" && passwordMelabo == 12191413)
+    if(mailMelabo == "baperbank@gmail.com" && passwordMelabo == 123456789)
     {
         window.location.href = ('after_login.html');
         
