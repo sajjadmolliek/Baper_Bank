@@ -7,12 +7,15 @@ document.getElementById('submitBttn').addEventListener('click', function(){
     
     if(mailMelabo == "baperbank@gmail.com" && passwordMelabo == 12191413)
     {
-        window.open('after_login.html', '_blank');
+        window.location.href = ('after_login.html');
         
     }
     else{
         alert ("Your Password Or Email Is Wrong Please Enter Correctly  :( ") ;
     }
+
+    mailMelabo = " ";
+    passwordMelabo = " ";
 })
 
 
