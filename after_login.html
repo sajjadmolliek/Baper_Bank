@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome In Baaper Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image/bank.png" type="image/x-icon">
+
+</head>
+<body>
+    <main class="p-5 lg:p-0">
+        <h1 class="text-5xl text-center my-10">
+           Let's Get Or Deposit some <span class="text-purple-800 font-semibold">Money </span>!!
+        </h1>
+
+
+        <!-- Money Show Section -->
+
+        <section class="flex flex-col lg:flex-row text-white  gap-28  justify-center">
+            <div id="div1" class="w-[100%] text-center lg:text-start lg:w-[15%] p-5 bg-green-600">
+                <h3 class="text-2xl">Deposit</h3>
+                <h1 class="text-4xl">$<span id="depositInitial">00</span></h1>
+            </div>
+            <div id="div2" class="w-[100%] text-center lg:text-start lg:w-[15%] p-5 bg-pink-600">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h1 class="text-4xl">$<span id="withdrawInitial">00</span></h1>
+            </div>
+            <div id="div3" class="w-[100%] text-center lg:text-start lg:w-[15%] p-5 bg-red-500">
+                <h3 class="text-2xl">Balance</h3>
+                <h1 class="text-4xl">$<span id="balanceInitial">00</span></h1>
+            </div>
+        </section>
+
+
+        <!-- Deposit and Withdraw Section -->
+
+        <section class="flex flex-col mt-10 lg:flex-row   gap-28  justify-center">
+            <div id="div1" class="w-[100%] text-center lg:text-start lg:w-[26%] p-5 bg-blue-500">
+                <h3 class="text-2xl text-white">Please Deposit</h3>
+                <input id="depositInput" class="block w-[100%] lg:w-10/12 rounded-lg h-10 my-5 p-5" type="number" name="" id="" placeholder="$ Amount You Want To Deposit">
+                <button id="depositSubmitBttn" class="btn border-0 bg-[red] hover:bg-[green] text-white" type="submit">Submit</button>
+            </div>
+            <div id="div2" class="w-[100%] text-center lg:text-start lg:w-[26%] p-5 bg-blue-400">
+                <h3 class="text-2xl text-white">Please Withdraw</h3>
+                <input id="withdrawInput" class="block w-[100%] lg:w-10/12 rounded-lg h-10 my-5 p-5" type="number" name="" id="" placeholder="$ Amount You Want To Withdraw">
+                <button id="withdrawSubmitBttn" class="btn border-0 bg-[red] hover:bg-[green] text-white" type="submit">Submit</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="takajomaBaperBank.js"></script>
+</body>
+</html>
